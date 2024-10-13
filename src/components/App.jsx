@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './NavBar';
+import NavBar from './NavBar.jsx';
 
 function App() {
   return (
