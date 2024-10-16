@@ -1,0 +1,38 @@
+---
+// src/components/Publication.astro
+const { title, description, image, arxivLink, journalLink, columns } = Astro.props;
+---
+
+<article class="publication">
+  <img src={image} alt={title} class="publication-image" />
+  <h2>{title}</h2>
+  <p>{description}</p>
+  <ul class="columned-list">
+    {columns.map(column => (
+      <li>{column}</li>
+    ))}
+  </ul>
+  <div class="links">
+    <a href={arxivLink} target="_blank">View on arXiv</a>
+    <a href={journalLink} target="_blank">View in Journal</a>
+  </div>
+</article>
+
+<style>
+  .publication {
+    margin-bottom: 2rem;
+  }
+  .columned-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+  .columned-list li {
+    flex: 1 1 30%;
+    margin: 0.5rem;
+  }
+  .links a {
+    margin-right: 1rem;
+  }
+</style>

@@ -1,14 +1,35 @@
 ---
-import React from 'react';
-import publications from '../components/publications.js';  // Import your React component
+// src/pages/publications.astro
+import Publication from '../components/Publication.astro';
+
+const publications = [
+  {
+    title: "Title",
+    description: "Description",
+    image: "image.png",
+    arxivLink: "arxiv.org",
+    journalLink: "journal.com",
+    columns: ["Column A", "Column B", "Column C"],
+  },
+  {
+    title: "Title",
+    description: "Description",
+    image: "image.jpg",
+    arxivLink: "arxiv",
+    journalLink: "journal.com",
+    columns: ["Column A", "Column B", "Column C"],
+  },
+];
 ---
 
-<html>
- <head>
-   <title>Publications</title>
-   <link rel="stylesheet" href="../styles/global.css" />  <!-- Link to your global CSS -->
- </head>
- <body>
-   <publications />  <!-- Use the React component in the Astro page -->
- </body>
-</html>
+<h1>Publications</h1>
+{publications.map(pub => (
+<Publication
+    title={pub.title}
+    description={pub.description}
+    image={pub.image}
+    arxivLink={pub.arxivLink}
+    journalLink={pub.journalLink}
+    columns={pub.columns}
+/>
+    ))}
