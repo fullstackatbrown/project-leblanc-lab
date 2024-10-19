@@ -1,35 +1,37 @@
 ---
-// src/pages/publications.astro
-import Publication from '../components/Publication.astro';
+import Publication from '../components/Publication.jsx';
 
 const publications = [
-  {
-    title: "Title",
-    description: "Description",
-    image: "image.png",
-    arxivLink: "arxiv.org",
-    journalLink: "journal.com",
-    columns: ["Column A", "Column B", "Column C"],
-  },
-  {
-    title: "Title",
-    description: "Description",
-    image: "image.jpg",
-    arxivLink: "arxiv",
-    journalLink: "journal.com",
-    columns: ["Column A", "Column B", "Column C"],
-  },
+    {
+        title: "Tile 1",
+        authors: "A",
+        arxivLink: "https://arxiv.org/",
+        image: "image.png",
+    },
+    {
+        title: "Title 2",
+        authors: "B",
+        arxivLink: "https://arxiv.org/",
+        image: "image.png",
+    },
 ];
 ---
 
+<html>
+<head>
+    <title>Leblanc Publications</title>
+</head>
+<body>
 <h1>Publications</h1>
-{publications.map(pub => (
-<Publication
-    title={pub.title}
-    description={pub.description}
-    image={pub.image}
-    arxivLink={pub.arxivLink}
-    journalLink={pub.journalLink}
-    columns={pub.columns}
-/>
+<div>
+    {publications.map(pub => (
+            <Publication
+                    title={pub.title}
+                    authors={pub.authors}
+                    arxivLink={pub.arxivLink}
+                    image={pub.image}
+            />
     ))}
+</div>
+</body>
+</html>
