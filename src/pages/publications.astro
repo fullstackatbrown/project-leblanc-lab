@@ -1,6 +1,7 @@
 ---
 import Publication from '../components/Publication.jsx';
 import NavBar from '../components/NavBar.jsx';
+import BibTexParser from '../components/BibTexParser.jsx';
 
 const publications = [
     {
@@ -19,13 +20,16 @@ const publications = [
 ---
 
 <html>
-<NavBar></NavBar>
+
+<NavBar/>
+
 <head>
     <title>Leblanc Publications</title>
 </head>
 <body>
 <h1>Publications</h1>
 <div>
+<BibTexParser />
     {publications.map(pub => (
             <Publication
                     title={pub.title}
