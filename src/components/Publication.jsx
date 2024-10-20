@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/App.css';
 
 const Publication = ({ title, authors, arxivLink, image }) => {
   const boxStyle = {
