@@ -29,7 +29,7 @@ const publications = [
 <body>
 <h1>Publications</h1>
 <div>
-<BibTexParser />
+<BibTexParser client:load />
     {publications.map(pub => (
             <Publication
                     title={pub.title}
