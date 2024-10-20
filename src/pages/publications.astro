@@ -1,0 +1,37 @@
+---
+import Publication from '../components/Publication.jsx';
+
+const publications = [
+    {
+        title: "Tile 1",
+        authors: "A",
+        arxivLink: "https://arxiv.org/",
+        image: "image.png",
+    },
+    {
+        title: "Title 2",
+        authors: "B",
+        arxivLink: "https://arxiv.org/",
+        image: "image.png",
+    },
+];
+---
+
+<html>
+<head>
+    <title>Leblanc Publications</title>
+</head>
+<body>
+<h1>Publications</h1>
+<div>
+    {publications.map(pub => (
+            <Publication
+                    title={pub.title}
+                    authors={pub.authors}
+                    arxivLink={pub.arxivLink}
+                    image={pub.image}
+            />
+    ))}
+</div>
+</body>
+</html>
