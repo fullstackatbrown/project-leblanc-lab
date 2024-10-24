@@ -9,18 +9,26 @@ function App() {
       <NavBar/>
 
       <div className='container'>
+
       <header className="App-header">
+
           <div className="left-section">
-            <h1>LeBlanc Lab</h1>
+            <h1 id="main-header">LeBlanc <a id="lighten-font">Lab</a></h1>
             <p> Lorem Ipsum <a href="https://physics.brown.edu">Brown University </a> </p>
-            <p>lfskdlfdsf fjskfsjlfjsd j fjslkfjsdlf  jkldjflksjflsd fsjklj fjsl fsjdfkl sjf lsjflksfj dslfsj fsl</p>
+            <p>Ante dictumst sapien vitae eget at habitasse cubilia. Sit dis varius lobortis 
+              commodo et suscipit lacinia. Dui cras mattis platea vulputate dapibus dolor. 
+              Fusce tempus interdum orci bibendum amet pharetra. Hendrerit elit vitae tristique
+               nec ex platea, torquent et lacinia. Odio blandit fames est mus elit justo duis 
+               gravida.</p>
             <a href="/publications"> <button>SEE OUR PUBLICATIONS &rarr;</button></a>
-            
           </div>
+
       </header>
+
       <div className="right-section">
         <img id="team-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/800px-Brown_Bears_Athletics_logo.svg.png"></img>
       </div>
+
       </div>
     </div>
   );
