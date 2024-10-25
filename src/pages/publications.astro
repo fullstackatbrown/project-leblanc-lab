@@ -4,18 +4,6 @@ import NavBar from '../components/NavBar.jsx';
 import BibTexParser from '../components/BibTexParser.jsx';
 
 const publications = [
-    {
-        title: "Tile 1",
-        authors: "A",
-        arxivLink: "https://arxiv.org/",
-        image: "image.png",
-    },
-    {
-        title: "Title 2",
-        authors: "B",
-        arxivLink: "https://arxiv.org/",
-        image: "image.png",
-    },
 ];
 ---
 
@@ -24,10 +12,9 @@ const publications = [
 <NavBar/>
 
 <head>
-    <title>Leblanc Publications</title>
+    <title>Publications</title>
 </head>
 <body>
-<h1>Publications</h1>
 <div>
 <BibTexParser client:load />
     {publications.map(pub => (
