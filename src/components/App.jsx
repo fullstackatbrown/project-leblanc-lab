@@ -1,7 +1,6 @@
 import '../styles/App.css';
 import NavBar from './NavBar.jsx';
 
-
 function App() {
   return (
     <div className="App">
@@ -20,7 +19,8 @@ function App() {
               Fusce tempus interdum orci bibendum amet pharetra. Hendrerit elit vitae tristique
                nec ex platea, torquent et lacinia. Odio blandit fames est mus elit justo duis 
                gravida.</p>
-            <a href="/publications"> <button>SEE OUR PUBLICATIONS &rarr;</button></a>
+               <br/>
+            <a href="/publications"> <h3>SEE OUR PUBLICATIONS &rarr;</h3></a>
           </div>
 
       </header>
