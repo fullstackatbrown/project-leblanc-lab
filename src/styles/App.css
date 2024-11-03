@@ -10,9 +10,6 @@
 .container {
   display: flex;
 }
-.App {
-  
-}
 
 .App-logo {
   height: 40vmin;
@@ -76,9 +73,11 @@ a:link, a:visited {
   font-weight: lighter;
 }
 
-button {
+/* commented this out because it was causing issues for NavBar */
+/* create an explicit class for the button so that only the intended button is affected */
+/* button {
   font-size: 115%;
   background-color: #fffffff6;
   border-style: none;
   padding-top: 10%;
-}
+} */

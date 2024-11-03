@@ -1,33 +1,81 @@
-/* NavBar.css */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-  }
-  
-  .navbar-logo h1 {
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-empty-space {
+  flex: 1;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid white; /*Gets rid of random black border*/
+}
+
+.hamburger-icon .hamburger-line {
+  display: block;
+  height: 8px;
+  width: 100%;
+  background-color: black;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.navbar-links {
+  list-style: none;
+  display: none; /* Hidden by default */
+  flex-direction: column; /* Dropdown style */
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  background-color: white;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links.open {
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a.active {
+  color: red;
+  font-weight: bold;
+}
+
+/* Hide menu on larger screens */
+@media (min-width: 768px) {
+  .hamburger-icon {
+    display: none;
   }
   
   .navbar-links {
-    list-style: none;
     display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    box-shadow: none;
+    gap: 40px;
   }
-  
-  .navbar-links li {
-    margin-left: 20px;
-  }
-  
-  .navbar-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-links a:hover {
-    color: #ddd;
-  }
-  
+}
