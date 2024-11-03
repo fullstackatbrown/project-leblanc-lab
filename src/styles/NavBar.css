@@ -65,7 +65,7 @@
 }
 
 /* Hide menu on larger screens */
-@media (min-width: 768px) {
+@media (min-device-width: 768px) {
   .hamburger-icon {
     display: none;
   }
