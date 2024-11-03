@@ -13,7 +13,7 @@ const parsedData = bibtexParse.toJSON(bibtexData);
     <title>Publications</title>
   </head>
   <body>
-    <NavBar />
+    <NavBar currentPage = "publications"/>
     <div>
       <h1>Research Publications</h1>
       {parsedData.map((article, index) => (
