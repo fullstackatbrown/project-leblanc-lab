@@ -1,38 +1,44 @@
 import React from 'react';
-import '../styles/App.css';
+import '../styles/publications.css';
 
-const Publication = ({ title, authors, arxivLink, image }) => {
-  const boxStyle = {
-    display: 'flex',
-    border: '1px solid #ccc',
-    borderRadius: '8px',
-    overflow: 'hidden',
-    padding: '16px',
-    marginBottom: '16px',
-  };
-
-  const imageStyle = {
-    width: '20%',
-    objectFit: 'cover',
-  };
-
-  const infoStyle = {
-    width: '80%',
-    paddingLeft: '16px',
-  };
-
+const Publication = ({ title, authors, arxivLink, image, date }) => {
   return (
-      <div style={boxStyle}>
-        <img src={image} alt={title} style={imageStyle} />
-        <div style={infoStyle}>
-          <h3>{title}</h3>
-          <p>{authors}</p>
-          <a href={arxivLink} target="_blank" rel="noopener noreferrer">
-            arXiv Link
-          </a>
-        </div>
+    <div className="publication-box">
+      <img src={image} alt={title} className="publication-thumbnail" />
+      <div className="publication-info">
+        <div className="publication-date">{date}</div>
+        <h3 className="publication-title">{title}</h3>
+        <p className="publication-authors">{authors}</p>
+        <a href={arxivLink} target="_blank" rel="noopener noreferrer" className="publication-link">
+          ARXIV
+        </a>
       </div>
+    </div>
   );
 };
 
-export default Publication;
+const Publications = ({ publications = [] }) => {
+  return (
+    <div className="page-container">
+    <div className="title-band">
+      <h1>Publications</h1>
+    </div>
+    <div className="publications-container">
+      {publications.length > 0 ? (
+        publications.map((publication, index) => (
+          <Publication key={index} 
+          title={publication.entryTags.title}
+          authors={publication.entryTags.author}
+          arxivLink={publication.entryTags.url || '#'}
+          image={publication.entryTags.preview}
+          date={publication.entryTags.year} />
+        ))
+      ) : (
+        <p>No publications available</p>
+      )}
+    </div>
+    </div>
+  );
+};
+
+export default Publications;
