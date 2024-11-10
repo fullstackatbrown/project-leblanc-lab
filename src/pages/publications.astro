@@ -1,5 +1,5 @@
 ---
-import Publication from '../components/Publication.jsx';
+import Publications from '../components/Publication.jsx';
 import NavBar from '../components/NavBar.jsx';
 import fs from 'fs';
 import bibtexParse from 'bibtex-parse-js';
@@ -15,16 +15,7 @@ const parsedData = bibtexParse.toJSON(bibtexData);
   <body>
     <NavBar client:load currentPage = "publications"/>
     <div>
-      <h1>Research Publications</h1>
-      {parsedData.map((article, index) => (
-        <Publication
-          key={index}
-          title={article.entryTags.title}
-          authors={article.entryTags.author}
-          arxivLink={article.entryTags.url || '#'}
-          image={article.entryTags.preview}
-        />
-      ))}
+      <Publications publications={parsedData} />
     </div>
   </body>
 </html>
