@@ -19,11 +19,17 @@
 }
 
 .year-title {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   color: #cccccc;
   font-family: 'Rethink Sans', serif;
   margin-bottom: 16px;
+}
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .publication-box {
@@ -32,83 +38,84 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  padding: 16px;
+  padding: 20px;
   align-items: center;
+  transition: background-color 0.3s;
+}
+
+.publication-box:hover {
+  background-color: #f0f0f0;
 }
 
 .publication-thumbnail {
-  width: 120px;
-  height: 90px;
+  width: 160px;
+  height: 120px;
   object-fit: cover;
   border-radius: 4px;
 }
 
 .publication-info {
   flex-grow: 1;
-  padding-left: 16px;
+  padding-left: 20px;
 }
 
 .publication-date {
-  font-size: 14px;
+  font-size: 16px;
   color: #777;
   margin-bottom: 4px;
 }
 
 .publication-title {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   font-family: 'Rethink Sans', serif;
   margin-bottom: 8px;
 }
 
 .publication-authors {
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Roboto', serif;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .publication-link {
   color: #000000;
   background-color: #ffffff;
-  padding: 4px 8px;
+  padding: 6px 12px;
   text-decoration: none;
   font-weight: bold;
   border: 1px solid #000000;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .publication-link:hover {
   text-decoration: underline;
 }
 
-.publication-date, .publication-title, .publication-authors, .publication-link {
-  flex-basis: auto;
-}
-
 .publications-header {
   background-color: #C02121;
   color: #ffffff;
-  padding: 16px;
-  font-size: 32px;
+  padding: 20px;
+  font-size: 36px;
   font-family: 'Rethink Sans', serif;
   text-align: center;
   margin-bottom: 32px;
 }
+
 .title-band {
-    background-color: #C02121;
-    color: #ffffff;
-    padding: 10px;
-    font-size: 48px;
-    font-family: 'Rethink Sans', serif;
-    text-align: center;
-    margin-top: 32px;
-  }
-  
-  .title-band h1 {
-    color: #ffffff;
-    font-size: 32px;
-    font-family: 'Rethink Sans', serif;
-    text-align: center;
-  }
-  
+  background-color: #C02121;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 52px;
+  font-family: 'Rethink Sans', serif;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.title-band h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-family: 'Rethink Sans', serif;
+  text-align: center;
+}
