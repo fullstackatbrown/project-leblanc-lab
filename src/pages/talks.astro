@@ -1,14 +1,21 @@
 ---
+import Talks from '../components/Talk.jsx';
 import NavBar from '../components/NavBar.jsx';
-import '../styles/talks.css'
+import fs from 'fs';
+import bibtexParse from 'bibtex-parse-js';
+
+const bibtexData = fs.readFileSync('./public/talks.bib', 'utf8');
+const parsedData = bibtexParse.toJSON(bibtexData);
 ---
 
 <html>
-
-<NavBar client:load currentPage = "talks"/>
-
-<body>
-    <h1>Talks</h1>
-</body>
-
+  <head>
+    <title>Talks</title>
+  </head>
+  <body>
+    <NavBar client:load currentPage = "talks"/>
+    <div>
+      <Talks talks={parsedData} />
+    </div>
+  </body>
 </html>
