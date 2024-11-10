@@ -1,8 +1,9 @@
 ---
 import NavBar from '../components/NavBar.jsx';
+import Team from '../components/TeamMember.jsx';
 import '../styles/team.css'
 ---
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team</title>
@@ -67,69 +68,8 @@ import '../styles/team.css'
     <div class="header">
         <h1>Our Team</h1>
     </div>
-    <div class="team-member">
-        <img src="img_path.jpg" alt="Matt LeBlanc Photo">
-        <h2>Matt LeBlanc</h2>
-        <p>Head of Lab</p>
-        <p><a href="mailto:mattleblanc@email.com">mattleblanc@email.com</a></p>
-        <p><a href="http://mattleblanc.com">mattleblanc.com</a></p>
-    </div>
-
-    <div class="grid">
-        <div class="box">
-            <h3>Member 1</h3>
-            <p>Position 1</p>
-            <p><a href="mailto:member1@email.com">member1@email.com</a></p>
-            <p><a href="http://member1.com">member1.com</a></p>
-        </div>
-        <div class="image-box">
-            <img src="add_path.jpg" alt="Team member photo">
-        </div>
-        <div class="box">
-            <h3>Member 2</h3>
-            <p>Position 2</p>
-            <p><a href="mailto:member2@email.com">member2@email.com</a></p>
-            <p><a href="http://member2.com">member2.com</a></p>
-        </div>
-        <div class="image-box">
-            <img src="add_path.jpg" alt="Team member photo">
-        </div>
-        <div class="box">
-            <h3>Member 3</h3>
-            <p>Position 3</p>
-            <p><a href="mailto:member3@email.com">member3@email.com</a></p>
-            <p><a href="http://member3.com">member3.com</a></p>
-        </div>
-        <div class="image-box">
-            <img src="add_path.jpg" alt="Team member photo">
-        </div>
-        <div class="box">
-            <h3>Member 4</h3>
-            <p>Position 4</p>
-            <p><a href="mailto:member4@email.com">member4@email.com</a></p>
-            <p><a href="http://member4.com">member4.com</a></p>
-        </div>
-        <div class="image-box">
-            <img src="add_path.jpg" alt="Team member photo">
-        </div>
-        <div class="box">
-            <h3>Member 5</h3>
-            <p>Position 5</p>
-            <p><a href="mailto:member5@email.com">member5@email.com</a></p>
-            <p><a href="http://member5.com">member5.com</a></p>
-        </div>
-        <div class="image-box">
-            <img src="add_path.jpg" alt="Team member photo">
-        </div>
-        <div class="box">
-            <h3>Member 6</h3>
-            <p>Position 6</p>
-            <p><a href="mailto:member6@email.com">member6@email.com</a></p>
-            <p><a href="http://member6.com">member6.com</a></p>
-        </div>
-        <div class="image-box">
-            <img src="add_path.jpg" alt="Team member photo">
-        </div>
+    <div id="team-container">
+        <Team />
     </div>
 </body>
 </html>
