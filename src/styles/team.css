@@ -9,3 +9,8 @@
     padding: 0;
     height: 100%;
   }
+
+  .team-title{
+    display: flex;
+    justify-content: center;
+}
