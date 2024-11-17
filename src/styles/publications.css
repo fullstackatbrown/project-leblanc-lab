@@ -7,6 +7,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Rethink Sans", serif;
+}
+
 .publications-container {
   display: flex;
   flex-direction: column;
@@ -68,13 +76,11 @@
 .publication-title {
   font-size: 22px;
   font-weight: bold;
-  font-family: 'Rethink Sans', serif;
   margin-bottom: 8px;
 }
 
 .publication-authors {
   font-size: 20px;
-  font-family: 'Roboto', serif;
   margin-bottom: 16px;
 }
 
@@ -108,7 +114,6 @@
   color: #ffffff;
   padding: 20px;
   font-size: 52px;
-  font-family: 'Rethink Sans', serif;
   text-align: center;
   margin-top: 32px;
 }
@@ -116,6 +121,5 @@
 .title-band h1 {
   color: #ffffff;
   font-size: 36px;
-  font-family: 'Rethink Sans', serif;
   text-align: center;
 }
