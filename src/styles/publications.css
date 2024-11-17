@@ -11,7 +11,9 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 32px;
+  padding-top: 16px;
+  padding-left: 400px;
+  padding-right: 400px;
 }
 
 .year-section {
@@ -39,7 +41,7 @@
   border-radius: 8px;
   overflow: hidden;
   padding: 20px;
-  align-items: center;
+  align-items: stretch;
   transition: background-color 0.3s;
 }
 
@@ -52,6 +54,9 @@
   height: 120px;
   object-fit: cover;
   border-radius: 4px;
+  min-width: 160px;
+  min-height: 120px ;
+  align-self: center;
 }
 
 .publication-info {
