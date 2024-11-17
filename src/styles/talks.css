@@ -19,11 +19,12 @@
 }
 
 .year-title {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: lighter;
   color: #cccccc;
   font-family: 'Rethink Sans', serif;
   margin-bottom: 16px;
+  margin-left: 52px;
 }
 
 .talks-list {
@@ -34,12 +35,12 @@
 
 .talk-box {
   display: flex;
-  flex-direction: row;
-  border: 1px solid #ccc;
+  flex-direction: column;
   border-radius: 8px;
   overflow: hidden;
   padding: 20px;
-  align-items: center;
+  align-items: left;
+  margin-left: 100px;
   transition: background-color 0.3s;
 }
 
@@ -48,10 +49,10 @@
 }
 
 .talk-thumbnail {
-  width: 160px;
-  height: 120px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .talk-info {
@@ -59,9 +60,11 @@
   padding-left: 20px;
 }
 
+
 .talk-date {
-  font-size: 16px;
-  color: #777;
+  font-size: 20px;
+  color: black;
+  font-family: 'Rethink Sans', serif;
   margin-bottom: 4px;
 }
 
