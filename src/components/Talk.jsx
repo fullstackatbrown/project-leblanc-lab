@@ -4,9 +4,9 @@ import '../styles/talks.css';
 const Talk = ({ title, authors, arxivLink, image, month, year }) => {
     return (
       <div className="talk-box">
+        <div className="talk-date">{month + " " + year}</div>
         <img src={image} alt={title} className="talk-thumbnail" />
         <div className="talk-info">
-          <div className="talk-date">{month + " " + year}</div>
           <h3 className="talk-title">{title}</h3>
           <p className="talk-authors">{authors}</p>
           <a href={arxivLink} target="_blank" rel="noopener noreferrer" className="talk-link">

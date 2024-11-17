@@ -34,12 +34,12 @@
 
 .talk-box {
   display: flex;
-  flex-direction: row;
-  border: 1px solid #ccc;
+  flex-direction: column;
   border-radius: 8px;
   overflow: hidden;
   padding: 20px;
-  align-items: center;
+  align-items: left;
+  margin-left: 100px;
   transition: background-color 0.3s;
 }
 
@@ -48,15 +48,19 @@
 }
 
 .talk-thumbnail {
-  width: 160px;
-  height: 120px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .talk-info {
   flex-grow: 1;
   padding-left: 20px;
+}
+
+.talk-date {
+  
 }
 
 .talk-date {
