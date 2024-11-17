@@ -7,14 +7,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "Rethink Sans", serif;
-}
-
 .container {
   display: flex;
 }
@@ -81,6 +73,22 @@ a:link, a:visited {
   font-weight: lighter;
 }
 
+@media (max-device-width: 1000px) {
+    .container{
+      display: block;
+    }
+    .App-header{
+      font-size: 40px;
+    }
+    .right-section{
+      padding-top: 15%;
+      padding-left: 30%;
+    }
+    #main-header {
+      padding-top: 5%;
+      font-size: 100px;
+    }
+} 
 /* commented this out because it was causing issues for NavBar */
 /* create an explicit class for the button so that only the intended button is affected */
 /* button {

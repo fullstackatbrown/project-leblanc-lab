@@ -20,6 +20,7 @@ function App() {
                nec ex platea, torquent et lacinia. Odio blandit fames est mus elit justo duis 
                gravida.</p>
                <br/>
+               <br/>
             <a href="/publications"> <h3>SEE OUR PUBLICATIONS &rarr;</h3></a>
           </div>
 
