@@ -49,7 +49,6 @@ body {
     width: 160px;
     height: 160px;
     object-fit: cover;
-    /* border-radius: 50%; */
 }
 
 .team-member-info {
@@ -86,4 +85,47 @@ body {
     font-size: 18px;
     font-family: "Roboto", serif;
     margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .title-band {
+        padding: 15px;
+        font-size: 42px;
+    }
+
+    .title-band h1 {
+        font-size: 28px;
+    }
+
+    #team-container {
+        padding: 16px 10%;
+    }
+
+    .team-member-box {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .team-member-thumbnail {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-member-info {
+        padding-left: 15px;
+    }
+
+    .team-member-name {
+        font-size: 26px;
+    }
+
+    .team-member-email,
+    .team-member-website {
+        font-size: 18px;
+    }
+
+    .team-member-description {
+        font-size: 20px;
+    }
 }
