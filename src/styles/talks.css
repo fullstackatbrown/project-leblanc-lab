@@ -35,11 +35,11 @@
 
 .talk-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-radius: 8px;
   overflow: hidden;
   padding: 20px;
-  align-items: left;
+  align-items: center;
   margin-left: 100px;
   transition: background-color 0.3s;
 }
@@ -48,11 +48,17 @@
   background-color: #f0f0f0;
 }
 
+.talk-thumbnail-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .talk-thumbnail {
-  width: 200px;
+  width: 300px;
   height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
+  object-fit: scale-down;
+  border-radius: 0px;
 }
 
 .talk-info {
@@ -60,25 +66,25 @@
   padding-left: 20px;
 }
 
-
 .talk-date {
   font-size: 20px;
   color: black;
   font-family: 'Rethink Sans', serif;
-  margin-bottom: 4px;
+  line-height: 1;
+
 }
 
 .talk-title {
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: normal;
   font-family: 'Rethink Sans', serif;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .talk-authors {
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Roboto', serif;
-  margin-bottom: 16px;
+  margin-bottom: 100px;
 }
 
 .talk-link {
