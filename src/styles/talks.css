@@ -49,6 +49,16 @@
   background-color: #f0f0f0;
 }
 
+.box-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box-link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .talk-thumbnail-container {
   display: flex;
   flex-direction: column;
@@ -86,21 +96,6 @@
   font-size: 16px;
   font-family: 'Roboto', serif;
   margin-bottom: 100px;
-}
-
-.talk-link {
-  color: #000000;
-  background-color: #ffffff;
-  padding: 6px 12px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid #000000;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.talk-link:hover {
-  text-decoration: underline;
 }
 
 .talks-header {
