@@ -65,6 +65,12 @@
 
 }
 
+.talk-thumbnail-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .talk-thumbnail {
   width: 300px;
   height: 300px;
@@ -81,13 +87,13 @@
   font-size: 20px;
   color: black;
   font-family: 'Rethink Sans', serif;
-  margin-bottom: 4px;
+  line-height: 1;
 
 }
 
 .talk-title {
   font-size: 28px;
-  font-weight: 450;
+  font-weight: normal;
   font-family: 'Rethink Sans', serif;
   margin-bottom: 16px;
 }
@@ -96,6 +102,21 @@
   font-size: 16px;
   font-family: 'Roboto', serif;
   margin-bottom: 100px;
+}
+
+.talk-link {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.talk-link:hover {
+  text-decoration: underline;
 }
 
 .talks-header {
