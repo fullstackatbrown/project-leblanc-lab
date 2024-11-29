@@ -73,7 +73,7 @@ a:link, a:visited {
   font-weight: lighter;
 }
 
-@media (max-device-width: 1000px) {
+@media (max-device-width: 600px) {
     .container{
       display: block;
     }
