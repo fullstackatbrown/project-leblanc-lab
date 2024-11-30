@@ -4,6 +4,7 @@
   align-items: center;
   padding: 20px 40px;
   border-bottom: 1px solid #ddd;
+  width: 100%;
 }
 
 html,
@@ -26,7 +27,7 @@ body {
   height: 40px;
   cursor: pointer;
   background-color: white;
-  border: 2px solid white; /*Gets rid of random black border*/
+  border: 2px solid white; 
 }
 
 .hamburger-icon .hamburger-line {
@@ -42,21 +43,22 @@ body {
   list-style: none;
   display: none; /* Hidden by default */
   flex-direction: column; /* Dropdown style */
-  position: absolute;
+  position: relative;
   top: 70px;
-  right: 40px;
   background-color: white;
-  padding: 10px;
-  gap: 10px;
+  padding: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-links.open {
   display: flex;
+  position: absolute;
+  right: 0;
 }
 
 .navbar-links li {
-  margin: 0;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
 }
 
 .navbar-links a {
@@ -64,12 +66,43 @@ body {
   color: black;
   font-size: 24px;
   font-weight: 400;
-  transition: color 0.3s ease;
+  position: relative; /* Required for the pseudo-element */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-links a:hover {
+  color: #C02121; 
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* Start with no underline */
+  height: 2px; /* Thickness of the underline */
+  background-color: #C02121; 
+  transition: width 0.3s ease; 
+}
+
+.navbar-links a:hover::after {
+  width: 100%; 
 }
 
 .navbar-links a.active {
-  color: red;
+  color: #C02121;
   font-weight: bold;
+}
+
+.navbar-title a {
+  text-decoration: none; 
+  color: inherit; 
+  transition: color 0.3s ease;
+  font-size: 1.5em;
+}
+
+.navbar-title a:hover {
+  color: red; 
 }
 
 /* Hide menu on larger screens */
@@ -86,4 +119,5 @@ body {
     box-shadow: none;
     gap: 40px;
   }
+
 }

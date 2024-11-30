@@ -45,23 +45,25 @@ const TeamMember = ({ name, email, website, picture, description }) => {
             <img src={picture} alt={name} className="team-member-thumbnail" />
             <div className="team-member-info">
                 <h3 className="team-member-name">{name}</h3>
-                {email && (
-                    <a href={`mailto:${email}`} className="team-member-email">
-                        {EMAIL_ICON}
-                        <span>{email}</span>
-                    </a>
-                )}
-                {website && (
-                    <a
-                        href={website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="team-member-website"
-                    >
-                        {GLOBE_ICON}
-                        <span>{website}</span>
-                    </a>
-                )}
+                <div className="team-member-contact">
+                    {email && (
+                        <a href={`mailto:${email}`} className="team-member-email">
+                            <div className="email-icon">{EMAIL_ICON}</div>
+                            <span>{email}</span>
+                        </a>
+                    )}
+                    {website && (
+                        <a
+                            href={website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="team-member-website"
+                        >
+                            <div className="globe-icon">{GLOBE_ICON}</div>
+                            <span>{website}</span>
+                        </a>
+                    )}
+                </div>
                 <p className="team-member-description">{description}</p>
             </div>
         </div>
@@ -74,21 +76,23 @@ const Team = ({ memberData = [] }) => {
             <div className="title-band">
                 <h1>Our Team</h1>
             </div>
-            <div id="team-container">
-                {memberData.length > 0 ? (
-                    memberData.map((member, index) => (
-                        <TeamMember
-                            key={index}
-                            name={member.name}
-                            email={member.email}
-                            website={member.website}
-                            picture={member.picture}
-                            description={member.description}
-                        />
-                    ))
-                ) : (
-                    <p>No team members available</p>
-                )}
+            <div className="fade-in">
+                <div id="team-container">
+                    {memberData.length > 0 ? (
+                        memberData.map((member, index) => (
+                            <TeamMember
+                                key={index}
+                                name={member.name}
+                                email={member.email}
+                                website={member.website}
+                                picture={member.picture}
+                                description={member.description}
+                            />
+                        ))
+                    ) : (
+                        <p>No team members available</p>
+                    )}
+                </div>
             </div>
         </div>
     );

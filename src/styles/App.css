@@ -7,6 +7,29 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+      opacity: 0;
+      transform: translateY(15px); /* Start slightly below */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Final position */
+  }
+}
+
+.fade-in {
+  opacity: 0; /* Start invisible */
+  animation: fadeInFromBottom 0.8s ease-out forwards; /* Trigger animation */
+}
+
 .container {
   display: flex;
 }
@@ -45,6 +68,10 @@ p {
   font-family: "Roboto",serif ;
 }
 
+.page-container{
+  width: 100%;
+  padding-right: 0;
+}
 
 .left-section {
   width: 60%;

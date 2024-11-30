@@ -4,9 +4,9 @@ import NavBar from './NavBar.jsx';
 function App() {
   return (
     <div className="App">
-
+     
       <NavBar currentPage = "about"/>
-
+      <div className="fade-in">
       <div className='container'>
 
       <header className="App-header">
@@ -30,6 +30,7 @@ function App() {
         <img id="team-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/800px-Brown_Bears_Athletics_logo.svg.png"></img>
       </div>
 
+      </div>
       </div>
     </div>
   );

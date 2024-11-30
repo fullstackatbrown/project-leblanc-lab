@@ -10,7 +10,11 @@ function NavBar({ currentPage = null }) {
 
     return (
         <nav className="navbar">
-            <div className="navbar-empty-space"></div>
+            <div className="navbar-empty-space">
+                <div className="navbar-title">
+                    <h1><strong><a href="/" >LeBlanc</a></strong></h1>
+                </div>
+            </div>
 
             <button className="hamburger-icon" onClick={toggleMenu}>
                 <div className="hamburger-line"></div>

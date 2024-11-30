@@ -32,34 +32,36 @@ const Publications = ({ publications = [] }) => {
   // Get an array of years, sorted in descending order
   const years = Object.keys(publicationsByYear).sort((a, b) => b - a);
 
-  return (
+  return ( 
     <div className="page-container">
       <div className="title-band">
         <h1>Publications</h1>
       </div>
-      <div className="publications-container">
-        {years.length > 0 ? (
-          years.map((year) => (
-            <div key={year} className="year-section">
-              <h2 className="year-title">{year}</h2>
-              <div className="publications-list">
-              {publicationsByYear[year].map((publication, index) => (
-                <Publication
-                  key={index}
-                  title={publication.entryTags.title}
-                  authors={publication.entryTags.author}
-                  arxivLink={publication.entryTags.url || '#'}
-                  image={publication.entryTags.preview}
-                  month={publication.entryTags.month}
-                  year={publication.entryTags.year}
-                />
-              ))}
+      <div className="fade-in">
+        <div className="publications-container">
+          {years.length > 0 ? (
+            years.map((year) => (
+              <div key={year} className="year-section">
+                <h2 className="year-title">{year}</h2>
+                <div className="publications-list">
+                {publicationsByYear[year].map((publication, index) => (
+                  <Publication
+                    key={index}
+                    title={publication.entryTags.title}
+                    authors={publication.entryTags.author}
+                    arxivLink={publication.entryTags.url || '#'}
+                    image={publication.entryTags.preview}
+                    month={publication.entryTags.month}
+                    year={publication.entryTags.year}
+                  />
+                ))}
+                </div>
               </div>
-            </div>
-          ))
-        ) : (
-          <p>No publications available</p>
-        )}
+            ))
+          ) : (
+            <p>No publications available</p>
+          )}
+        </div>
       </div>
     </div>
   );
