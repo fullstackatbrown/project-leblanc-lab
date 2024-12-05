@@ -48,6 +48,8 @@ html, body {
   font-size: 17px;
   color: rgb(0, 0, 0);
   font-family: "Rethink Sans",serif;
+  margin-right: 3rem;
+  margin-top: 3rem;
 }
 
 .App-link {
@@ -78,14 +80,15 @@ p {
 }
 
 .right-section {
-  width: 40%;
+  width: 40%;  
+  margin-right: 3rem;
 }
 
 #team-image {
   width: 419px;
   height: 100%;
   padding-top: 20%;
-  padding-right:15%;
+  padding-right: 20%;
 }
 
 #main-header {
@@ -100,7 +103,7 @@ a:link, a:visited {
   font-weight: lighter;
 }
 
-@media (max-device-width: 600px) {
+@media (max-device-width: 700px) {
     .container{
       display: block;
     }

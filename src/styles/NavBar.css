@@ -41,13 +41,14 @@ body {
 
 .navbar-links {
   list-style: none;
-  display: none; /* Hidden by default */
-  flex-direction: column; /* Dropdown style */
+  display: none; 
+  flex-direction: column; 
   position: relative;
   top: 70px;
   background-color: white;
   padding: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
 
 .navbar-links.open {
