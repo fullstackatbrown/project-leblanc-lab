@@ -61,33 +61,14 @@
   margin-left: 100px;
   margin-right: 100px;
   transition: background-color 0.3s;
+  text-decoration: none;
+  color: inherit;
 }
 
 .talk-box:hover {
   background-color: #f0f0f0;
 }
 
-.box-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.box-link:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-.talk-thumbnail-container {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.talk-thumbnail-container {
-  display: flex;
-  flex-direction: column;
-
-}
 
 .talk-thumbnail {
   width: 300px;
@@ -169,18 +150,29 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 2rem;
-  }
-
-  .talk-box {
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
 
   .year-title {
     left: 0;
     margin-left: 0rem;
+  }
+
+  .talk-info{
+    padding-top: 1rem;
+    align-items: center;
+  }
+}
+
+
+@media (max-device-width: 800px)  {
+  .talk-box {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
   }
 }

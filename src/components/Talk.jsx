@@ -3,18 +3,16 @@ import '../styles/talks.css';
 
 const Talk = ({ title, authors, arxivLink, image, month, year }) => {
     return (
-      <a href={arxivLink} target="_blank" rel="noopener noreferrer" className="box-link">
-      <div className="talk-box">
-        <div className="talk-thumbnail-container">
-          <div className="talk-date">{month + " " + year}</div>
-          <img src={image} alt={title} className="talk-thumbnail" />
-        </div>
-        <div className="talk-info">
-          <h3 className="talk-title">{title}</h3>
-          <p className="talk-authors">{authors}</p>
-        </div>
-      </div>
-      </a>
+        <a href={arxivLink} target="_blank" rel="noopener noreferrer" className="talk-box">
+          <div className="talk-thumbnail-container">
+            <div className="talk-date">{month + " " + year}</div>
+            <img src={image} alt={title} className="talk-thumbnail" />
+          </div>
+          <div className="talk-info">
+            <h3 className="talk-title">{title}</h3>
+            <p className="talk-authors">{authors}</p>
+          </div>
+        </a>
     );
   };
 

@@ -31,7 +31,12 @@ html, body {
 }
 
 .container {
-  display: flex;
+  display: flex; /* Enables flexbox for the container */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  width: 100%;
+  gap: 2rem; /* Adds spacing between the left and right sections */
+  padding-top: 3rem;
 }
 
 .App-logo {
@@ -50,6 +55,7 @@ html, body {
   font-family: "Rethink Sans",serif;
   margin-right: 3rem;
   margin-top: 3rem;
+  margin: 0 auto; 
 }
 
 .App-link {
@@ -70,17 +76,18 @@ p {
   font-family: "Roboto",serif ;
 }
 
-.page-container{
-  width: 100%;
-  padding-right: 0;
-}
 
 .left-section {
-  width: 60%;
+  flex: 3; 
+  padding-left: 12rem;
+  padding-right: 10rem;
 }
 
 .right-section {
-  width: 40%;  
+  flex: 2; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 3rem;
 }
 
@@ -103,27 +110,29 @@ a:link, a:visited {
   font-weight: lighter;
 }
 
-@media (max-device-width: 700px) {
+@media (max-device-width: 1000px) {
     .container{
       display: block;
     }
     .App-header{
-      font-size: 40px;
+      font-size: 20px;
     }
-    .right-section{
-      padding-top: 15%;
-      padding-left: 30%;
+    .left-section{
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
     #main-header {
       padding-top: 5%;
-      font-size: 100px;
+      font-size: 50px;
     }
+    .right-section {
+      width: 100%;
+    }
+    #team-image {
+      width: 300px;
+      height: 100%;
+      padding-top: 20%;
+      padding-right: 20%;
+    }
+    
 } 
-/* commented this out because it was causing issues for NavBar */
-/* create an explicit class for the button so that only the intended button is affected */
-/* button {
-  font-size: 115%;
-  background-color: #fffffff6;
-  border-style: none;
-  padding-top: 10%;
-} */
