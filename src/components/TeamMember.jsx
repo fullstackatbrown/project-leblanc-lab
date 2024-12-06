@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from './Footer.jsx';
 // import "./App.css";
 import "../styles/team.css";
 
@@ -94,6 +95,7 @@ const Team = ({ memberData = [] }) => {
                     )}
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

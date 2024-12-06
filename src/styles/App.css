@@ -113,7 +113,6 @@ a:link, a:visited {
 @media (max-device-width: 1000px) {
     .container{
       display: block;
-      padding-bottom: 5rem;
     }
     .App-header{
       font-size: 20px;

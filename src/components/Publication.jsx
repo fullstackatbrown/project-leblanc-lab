@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer.jsx';
 import '../styles/publications.css';
 
 const Publication = ({ title, authors, arxivLink, image, month, year }) => {
@@ -63,6 +64,7 @@ const Publications = ({ publications = [] }) => {
           )}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

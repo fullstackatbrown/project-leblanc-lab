@@ -1,5 +1,6 @@
 import '../styles/App.css';
 import NavBar from './NavBar.jsx';
+import Footer from './Footer.jsx';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
 
       </div>
       </div>
+      <Footer/>
     </div>
   );
 }

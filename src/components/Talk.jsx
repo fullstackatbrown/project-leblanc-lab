@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer.jsx';
 import '../styles/talks.css';
 
 const Talk = ({ title, authors, arxivLink, image, month, year }) => {
@@ -62,6 +63,7 @@ const Talks = ({ talks = [] }) => {
             )}
           </div>
         </div>
+        <Footer/>
       </div>
     );
 };
