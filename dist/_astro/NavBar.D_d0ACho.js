@@ -1,0 +1,9 @@
+import{r as o}from"./index.DhYZZe0J.js";/* empty css                       */var m={exports:{}},i={};/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var d=o,h=Symbol.for("react.element"),p=Symbol.for("react.fragment"),u=Object.prototype.hasOwnProperty,j=d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,f={key:!0,ref:!0,__self:!0,__source:!0};function x(a,s,l){var r,n={},t=null,c=null;l!==void 0&&(t=""+l),s.key!==void 0&&(t=""+s.key),s.ref!==void 0&&(c=s.ref);for(r in s)u.call(s,r)&&!f.hasOwnProperty(r)&&(n[r]=s[r]);if(a&&a.defaultProps)for(r in s=a.defaultProps,s)n[r]===void 0&&(n[r]=s[r]);return{$$typeof:h,type:a,key:t,ref:c,props:n,_owner:j.current}}i.Fragment=p;i.jsx=x;i.jsxs=x;m.exports=i;var e=m.exports;function _({currentPage:a=null}){const[s,l]=o.useState(!1),r=()=>{l(!s)};return e.jsxs("nav",{className:"navbar",children:[e.jsx("div",{className:"navbar-empty-space",children:e.jsx("div",{className:"navbar-title",children:e.jsx("h1",{children:e.jsx("strong",{children:e.jsx("a",{href:"/",children:"LeBlanc"})})})})}),e.jsxs("button",{className:"hamburger-icon",onClick:r,children:[e.jsx("div",{className:"hamburger-line"}),e.jsx("div",{className:"hamburger-line"}),e.jsx("div",{className:"hamburger-line"})]}),e.jsxs("ul",{className:`navbar-links ${s?"open":""}`,children:[e.jsx("li",{children:e.jsx("a",{href:"/",className:a==="about"?"active":"",children:"about"})}),e.jsx("li",{children:e.jsx("a",{href:"/team",className:a==="team"?"active":"",children:"team"})}),e.jsx("li",{children:e.jsx("a",{href:"/publications",className:a==="publications"?"active":"",children:"publications"})}),e.jsx("li",{children:e.jsx("a",{href:"/talks",className:a==="talks"?"active":"",children:"talks"})})]})]})}export{_ as N,e as j};

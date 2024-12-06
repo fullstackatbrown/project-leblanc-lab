@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Matt LeBlanc",
+        "email": "matt.leblanc@cern.ch",
+        "website": "https://mattleblanc.github.io",
+        "picture": "https://via.placeholder.com/150",
+        "description": "Description"
+    },
+    {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "website": "https://johndoe.com",
+        "picture": "https://via.placeholder.com/150",
+        "description": "John is a software engineer with 10 years of experience in web development."
+    },
+    {
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "website": "https://janesmith.com",
+        "picture": "https://via.placeholder.com/150",
+        "description": "Jane is a project manager who specializes in agile methodologies and team leadership."
+    },
+    {
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "website": "https://alicejohnson.com",
+        "picture": "https://via.placeholder.com/150",
+        "description": "Alice is a UX/UI designer with a passion for creating intuitive user experiences."
+    },
+    {
+        "name": "Bob Brown",
+        "email": "bob.brown@example.com",
+        "website": "https://bobbrown.com",
+        "picture": "https://via.placeholder.com/150",
+        "description": "Bob is a data scientist with expertise in machine learning and data analysis."
+    }
+]
