@@ -55,7 +55,7 @@ body {
 .publications-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 2rem;
 }
 
 .publication-box {
@@ -166,10 +166,9 @@ body {
     align-items: stretch;
   }
 
-
   .publication-thumbnail {
     align-self:flex-start;
-    height: 20rem;
+    height: 15rem;
     width: auto;
   }
 
@@ -179,8 +178,8 @@ body {
   }
 
   .year-title {
-    font-size: 50px;
-    padding-left: 16px;
+    font-size: 45px;
+    padding-left: 0px;
     padding-right: 16px;
   }
 
@@ -189,17 +188,17 @@ body {
   }
 
   .publication-title {
-    font-size: 35px;
+    font-size: 30px;
     text-align: left;
   }
 
   .publication-authors {
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
   }
 
   .publication-link {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 12px;
   }
 
@@ -209,13 +208,52 @@ body {
     padding-right: 16px;
   }
 
+
+}
+
+@media (max-device-width: 700px)  {
+  .publication-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .year-title {
+    font-size: 40px;
+    padding-left: 0px;
+    padding-right: 16px;
+  }
+
+  .publication-date {
+    font-size: 20px;
+  }
+
+  .publication-title {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .publication-authors {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .publication-link {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+
+  .title-band {
+    font-size: 70px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .title-band h1 {
-    font-size: 55px;
+    font-size: 45px;
   }
 }
 
 
-@media (max-device-width: 400px)  {
+@media (max-device-width: 450px)  {
   .publication-thumbnail {
     width: 300px;
     height: 250px;

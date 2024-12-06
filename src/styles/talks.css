@@ -48,7 +48,7 @@
 .talks-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 2rem;
 }
 
 .talk-box {
@@ -63,6 +63,7 @@
   transition: background-color 0.3s;
   text-decoration: none;
   color: inherit;
+  border: 1px solid #ccc;
 }
 
 .talk-box:hover {
