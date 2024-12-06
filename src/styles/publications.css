@@ -206,9 +206,8 @@ body {
     font-size: 70px;
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 0px;
   }
-
-
 }
 
 @media (max-device-width: 700px)  {
@@ -260,5 +259,8 @@ body {
     object-fit: cover;
     border-radius: 4px;
     align-self: center;
+  }
+  .title-band h1 {
+    font-size: 35px;
   }
 }
